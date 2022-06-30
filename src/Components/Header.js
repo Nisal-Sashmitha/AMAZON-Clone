@@ -1,7 +1,8 @@
 import React from 'react';
 import '../Style/Header.css';
 import SearchIcon from '@mui/icons-material/Search';
-import { cyan } from '@mui/material/colors';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+
 
 
 function Header() {
@@ -13,7 +14,7 @@ function Header() {
         
         <div className="Header_Search">
             <input type="text" className='Header__SearchInput'/>
-            <SearchIcon  className="Header__SearchIcon" fontSize="large" sx={{ color: cyan[500] }}/>
+            <SearchIcon  className="Header__SearchIcon" fontSize="large"/>
 
         </div>  
         <div className='header__nav'>    
@@ -41,7 +42,11 @@ function Header() {
                     Prime
                 </span>
             </div>
-            <div className='header_options'></div>
+            <div className='header_optionBasket'>
+
+                <ShoppingBasketIcon className='Header__optionBasketIcon'/>
+                <span className='header__lineTwo head__basketCount'>0</span>
+            </div>
         </div>      
     </div>
   )
