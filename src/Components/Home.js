@@ -53,7 +53,7 @@ function Home() {
               title='The lean startup'
               image="https://m.media-amazon.com/images/I/81SrwYY-6-L._AC_UY327_FMwebp_QL65_.jpg"
               price = {29.99}
-              rating={3}
+              rating={2}
               />
           </div>
         </div>
